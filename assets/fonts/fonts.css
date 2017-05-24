@@ -1,0 +1,23 @@
+@font-face{
+	font-family: Universe;
+	src: url(universLT.otf);
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: Segoe;
+	src: url(SegoeUIRegular.ttf);
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: Grotesk;
+	src: url(AlteHaasGroteskRegular.ttf);
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: Lavanderia;
+	src: url(LavanderiaR.otf);
+	font-weight: normal;
+}

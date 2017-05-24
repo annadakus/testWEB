@@ -1,0 +1,228 @@
+$fontUnivers: Universe
+$fontSegoe: Segoe 
+$fontGrotesk: Grotesk
+$fontLavand: Lavanderia
+	
+
+$color-footer: #27292a
+$color-blue: #4eb9f4
+$color-green: #6fc125
+$color-pink: #ff5649
+$color-orange: #e48f23
+$color-text: #404040
+$color-footer-text: #8b8b8b
+
+@mixin flex 
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+
+body
+	font-family: $fontUnivers
+	color: $color-text
+	font-size: 100%
+	 
+a
+	text-decoration: none 	
+
+h2
+	font-size: 26pt
+	text-align: center  
+	margin-bottom: 20px 
+.wrapper
+	max-width: 1280px  
+	width: 100% 
+	margin: 0 auto
+	
+ 
+	
+header
+	background: rgba(255, 255, 255, 0.7)
+	.header
+		padding: 0 130px
+		height: 90px   
+		@include flex
+		justify-content: space-between
+		align-items: center
+		
+.logo
+	margin-left: 25px 
+	font-family: $fontLavand
+	font-size: 31pt 
+	color: #000
+	span
+		color: #ba4562
+ 
+.nav
+	li
+		display: inline
+		margin-right: 35px 
+		&:last-child
+			padding: 5px 10px
+			background-color: #de6d6e 
+			border-radius: 3px
+			a
+				color: #fff
+				i
+					margin-right: 5px 
+	a
+		font-family: $fontSegoe
+		font-size: 13pt   
+		color: $color-text
+			
+
+.welcome
+	height: 800px
+	box-sizing: border-box
+	padding-top: 550px 
+	background: url(../images/star.jpg) no-repeat center top
+	background-size: 100%
+	position: relative 
+	top: -90px
+	z-index: -1
+	h1
+		color: #fff
+		font-family: $fontGrotesk
+		font-size: 51pt
+		text-transform: uppercase 
+		text-align: center   
+		font-weight: bold 
+		margin-bottom: 15px
+
+	p
+		font-size: 19pt
+		color: #fff
+		text-align: center  
+main
+	.lorem-container
+		padding: 0 130px 45px
+		height: 469px 
+		box-sizing: border-box
+		
+		p
+			font-size: 13pt 
+			text-align: center
+			margin: 0 90px 
+		.lorem-items
+			@include flex
+			justify-content: space-between 
+			margin: 80px 35px 0
+			.item
+				width: 180px
+				height: 180px 
+				border-radius: 50%
+				cursor: pointer
+				p
+					color: #fff
+					margin: 135px 0 0
+			.ticket
+				background: $color-blue url(../images/tikets.png) no-repeat center center
+				transition: 1s ease-in-out
+				&:hover
+					background-color: #ffff00
+					transform: rotate(360deg)
+					border-radius: 0
+					
+			.camera
+				background: $color-green url(../images/camera.png) no-repeat center center
+				transition: 1s ease-in-out
+				&:hover
+					background-color: #9900ff
+					transform: rotate(360deg)
+			.beer
+				background: $color-pink url(../images/beer.png) no-repeat center center
+				transition: 1s ease-in-out
+				padding: 50px 20px
+				box-sizing: border-box
+				&:hover
+					background-color: #000099
+					transform: rotate(360deg)
+					border-radius: 0
+				.beertext
+					opacity: 0.5
+					margin-top: 15px 
+				.description
+					font-size: 9pt 
+					margin-top: 0
+					text-align: center  
+			.device	 
+				background: $color-orange url(../images/ipad.png) no-repeat center center
+				transition: 1s ease-in-out
+				&:hover
+					background-color: #009999
+					transform: rotate(360deg)
+	.news-container
+		padding: 0 130px 0
+		.news-feed
+			margin: 40px 0 0 65px
+			height: 210px
+			box-sizing: border-box
+			img
+				margin-right: 25px 
+				float: left
+				 
+			h3
+				font-size: 20pt
+				margin-bottom: 15px 
+			p
+				font-size: 11pt 
+				text-align: justify 
+				line-height: 1.7  
+			.clearfix
+				clear: both
+.personages
+
+	padding: 0 130px 0 180px
+	@include flex
+	flex-wrap: wrap
+	justify-content: flex-start
+	.persona-container
+		width: 300px 
+		height: 180px 
+		border: 4px solid #000	
+		border-radius: 20px
+		padding: 30px 	
+		box-sizing: border-box
+		margin-right: 20px 
+		margin-bottom: 10px 
+		.title-name, .title-height, .title-gender, .title-quiz
+			font-size: 16pt  
+			font-weight: bold 
+			span
+				font-family: $fontSegoe
+				font-size: 18pt  
+footer
+	background-color: $color-footer
+	.footer
+		padding: 35px 130px 35px 190px
+		height: 260px
+		box-sizing: border-box 
+		@include flex
+		justify-content: space-between 
+		color: $color-footer-text
+.submenu
+	p
+		font-size: 15pt
+		margin-bottom: 20px 
+	ul
+		a
+			color: $color-footer-text
+			line-height: 1.5 
+.icons
+	ul
+		@include flex
+		justify-content: space-between
+		align-items: center
+		li
+			
+			margin: 15px 0 30px
+			min-width: 50px  
+			height: 50px
+			border-radius: 50%
+			background-color: $color-footer-text
+			text-align: center 
+		a
+			color: $color-footer
+			font-size: 26pt
+			i
+				margin-top: 8px 
